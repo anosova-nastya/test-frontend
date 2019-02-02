@@ -1,0 +1,13 @@
+include ../button/button
+include ../heading/heading
+
+mixin services()
+    div.services__container
+        ul.services.positioner
+            each service in ['Photos', 'Videos', 'Downloads']
+                li.services__service(class='services__service--' + service.toLowerCase())
+                    +heading(2).heading--secondary.services__name #{service}
+                    p.services__text
+                        | Vestibulum suscipit tortor magna, quis pellentesque arcu volutpat ac. Tempus
+                        | leo erat, sit amet ullamcorper nisl.
+                    +button.services__button Button

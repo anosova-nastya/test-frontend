@@ -1,0 +1,17 @@
+.search {
+    display: block;
+    height: 48px;
+    width: 48px;
+    margin: 30px auto;
+    font-size: 0;
+    text-decoration: none;
+    background-image: url('%=static=%assets/search/search.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.5;
+    transition: 0.2s ease opacity;
+
+    &:hover {
+        opacity: 1;
+    }
+}

@@ -1,0 +1,18 @@
+include ../button/button
+include ../heading/heading
+
+mixin blog()
+    div.blog__container
+        div.positioner
+            +heading(1).blog__title.heading--with-line From the blog
+            ul.blog
+                - for (var i = 0; i < 3; i++)
+                    li.blog__post
+                        div.blog__image
+                        div.blog__info
+                            +heading(2).blog__post-title Title of a post
+                            p.blog__text
+                                | In hac habitasse platea dictumst. Phasellus finibus ipsum enim, non
+                                | pretium massa mattis non. Curabitur ut tempus ex. Nunc dictum est
+                                | enim, consectetur convallis odio mollis tempus.
+                            +button Read More

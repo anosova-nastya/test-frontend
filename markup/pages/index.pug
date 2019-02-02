@@ -1,0 +1,23 @@
+doctype html
+html(class="no-js" lang="ru")
+    head
+        meta(charset="utf-8")
+        title Тестовое задание
+        meta(http-equiv="x-ua-compatible" content="ie=edge")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        meta(name="HandheldFriendly" content="true")
+        link(href="%=static=%css/main%=hash=%%=min=%.css" rel="stylesheet" type="text/css")
+        include ../components/header/header
+        include ../components/first-screen/first-screen
+        include ../components/services/services
+        include ../components/citation/citation
+        include ../components/blog/blog
+        include ../components/footer/footer
+    body.page
+        +header
+        main
+            +first-screen
+            +services
+            +citation
+            +blog
+            +footer

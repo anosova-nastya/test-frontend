@@ -1,0 +1,13 @@
+.positioner {
+    width: 100%;
+    width: calc(100% - 150px);
+    max-width: 1210px;
+    margin-left: auto;
+    margin-right: auto;
+
+    &--narrow {
+        max-width: 816px;
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+}

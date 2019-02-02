@@ -1,0 +1,20 @@
+.social-networks__item {
+    display: inline-block;
+    height: 48px;
+    width: 48px;
+    vertical-align: middle;
+    font-size: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 75%;
+    opacity: 0.5;
+    transition: 0.2s ease opacity;
+
+    &:hover {
+        opacity: 1;
+    }
+
+    &--facebook { background-image: url('%=static=%assets/social-networks/facebook.svg') }
+    &--twitter { background-image: url('%=static=%assets/social-networks/twitter.svg') }
+    &--instagram { background-image: url('%=static=%assets/social-networks/instagram.svg') }
+}

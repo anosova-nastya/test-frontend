@@ -1,0 +1,11 @@
+include ../menu/menu
+include ../social-networks/social-networks
+
+mixin footer
+    footer.footer__container
+        div.positioner.footer
+            div.footer__column
+                +menu.menu--horyzont
+                span.footer__copyright (c) 2018 NAME. All rights reserved.
+            div.footer__column
+                +social-networks
